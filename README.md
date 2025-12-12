@@ -5,7 +5,7 @@ The goal of the project is to compare several MSA strategies and evaluate their 
 
 1. VAT-based guide trees using both full VAT distances and mBed-style embeddings  
 2. Progressive profile–profile alignment using guide trees  
-3. Gibbs sampling as a refinement method on an existing MSA  
+3. Gibbs sampling as a refinement method on MSA for local alignment  
 4. Evaluation of generated alignments against Pfam reference data
 
 The scripts in this folder perform three major functions:
@@ -33,10 +33,10 @@ Standardizes alignments (sequence order, naming, gap formatting) to enable compa
 Converts Pfam SEED files and extracted sequences into standard FASTA format.
 
 **gibbs_test.py**  
-Experimental Gibbs sampling refinement on an existing MSA.
+Experimental Gibbs sampling refinement on MSA for computing optimal local alignment.
 
 **test_alignment_to_pfam.py**  
-Compares an alignment to the Pfam reference alignment using basic SP-like metrics.
+Compares an alignment to the Pfam reference alignment using FastSP.
 
 **VAT_guidetree4_prev.py / VAT_guidetree5_prev.py**  
 Earlier versions of the VAT guide-tree implementations (kept for reference).
