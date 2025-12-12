@@ -33,10 +33,10 @@ Standardizes alignments (sequence order, naming, gap formatting) to enable compa
 Converts Pfam SEED files and extracted sequences into standard FASTA format.
 
 **gibbs_test.py**  
-Experimental Gibbs sampling refinement of MSA for local alignments.
+Experimental Gibbs sampling refinement on MSA for computing optimal local alignment.
 
 **test_alignment_to_pfam.py**  
-Compares an alignment to the Pfam reference alignment using basic SP-like metrics.
+Compares an alignment to the Pfam reference alignment using FastSP.
 
 **VAT_guidetree4_prev.py / VAT_guidetree5_prev.py**  
 Earlier versions of the VAT guide-tree implementations (kept for reference).
